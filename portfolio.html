@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Innovative Global Concepts, Inc. Ingloco.com
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style type="text/css">
+            #mission{
+                background-image: url(image/misbac.jpg);
+                height: auto;
+                margin-top: 10px;
+                width: "80%";
+                margin-bottom: 20px;
+                background-repeat: no-repeat; 
+            }
+            #mission h2{
+                color: white;
+                text-align: center;
+                padding-top: 75px;
+                padding-bottom: 30px;
+            }
+            #mission p{
+                color: white;
+                font-size: 40px;
+                text-align: center;
+                margin-left: 25%;
+                margin-right: 25%;
+                padding-bottom: 75px;
+            }
+            #news{
+                border: ;
+                margin-bottom: 10px;
+                height: ;
+            }
+            #news1{
+                width: 33%;
+                float: left;
+                padding: 2% 4% 2% 0%;
+            }
+            #news2{
+                width: 33%;
+                float: left;
+                margin-left: .5%;
+                margin-right: .5%;
+                padding: 2%;
+            }
+            #news3{
+                width: 33%;
+                float: left;
+                padding: 2% 0% 2% 4%;
+            }
+            a:link #news1, a:link #news2, a:link #news3, a:visited #news1, a:visited #news2, a:visited #news3{
+                color: black;
+            }
+            a:hover #news1, a:hover #news2, a:hover #news3, a:active #news1, a:active #news2, a:active #news3{
+                color: black;
+                border-top: 2px dashed black;
+                border-bottom: 2px dashed black;
+            }
+        </style>
+        <script language="javascript">
+            <!--
+            
+            // Copyright 2006-2007 javascript-array.com
+            
+            var timeout	= 500;
+            var closetimer	= 0;
+            var ddmenuitem	= 0;
+            
+            // open hidden layer
+            function mopen(id)
+            { 
+            // cancel close timer
+            mcancelclosetime();
+            
+            // close old layer
+            if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+            
+            // get new layer and show it
+            ddmenuitem = document.getElementById(id);
+            ddmenuitem.style.visibility = 'visible';
+            
+            }
+            // close showed layer
+            function mclose()
+            {
+            if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+            }
+            
+            // go close timer
+            function mclosetime()
+            {
+            closetimer = window.setTimeout(mclose, timeout);
+            }
+            
+            // cancel close timer
+            function mcancelclosetime()
+            {
+            if(closetimer)
+            {
+            window.clearTimeout(closetimer);
+            closetimer = null;
+            }
+            }
+            
+            // close layer when click-out
+            document.onclick = mclose; 
+            // Stop hiding -->
+        </script>
+    </head>
+    <body>
+        <!--The header should be absolute or fixed not sure which one also trying to figure out how to keep nav bar from breaking when window becomes to small to display entire list-->
+        <div id="header">
+        <img src="image/igc.jpg" alt="Innovative Global Concepts logo & text" width="270" height="90" class="logo">
+        <div id="nav">
+            <table align="right">
+            <tr>
+            <td align="center">
+            <ul id="ddm">
+            <li><a href="index.html" class="nav1">Home</a></li>
+            <li><a href="history.html" class="nav1">Our History</a></li>
+            <li><a href="executives.html" class="nav1">Executives</a></li>
+            <li><a href="brands.html" 
+            onmouseover="mopen('m4')" 
+            onmouseout="mclosetime()" class="nav2">Our Brands</a>
+            <div id="m4" 
+            onmouseover="mcancelclosetime()" 
+            onmouseout="mclosetime()">
+            <a href="brands.html#hoop1">Hoop24Seven</a>
+            </div>
+            </li>
+            <li><a href="investors.html" class="nav1">Investors</a>
+            </li>
+            </ul>
+            <div style="clear:both"></div>
+            </td>
+            </tr>
+            </table>
+        </div>
+        </div>
+        <div id="body">
+            <!--MISSION is set to auto height, would like to adjust to set height and text resizing to fit space later-->
+            <div id="mission">
+                <h2>Our Mission:</h2>
+                <p>
+                    <strong>
+                        Support The Development Of Innovative Ideas With A Clear Global Benefit.
+                    </strong>
+                </p>
+            </div>
+            <div id="news"><!--must as links to news articles-->
+                <a href="investors.html">
+                    <div id="news1">
+                        <h2>Investing With IGC</h2>
+                        <p>
+                            We are actively considering investors to advance our company and brands.
+                        </p>
+                    </div>
+                </a>
+                <a href="brands.html#hoops2">
+                    <div id="news2">
+                        <h2>Hoop24Seven Apps In Developemt</h2>
+                        <p>
+                           Development of the Hoop24Seven.com mobile Applications are projected to be avialable fall 2016. 
+                        </p>
+                    </div>
+                </a>
+                <a href="">
+                    <div id="news3"><!--third news link undecided-->
+                        <h2>Need third News</h2>
+                        <p>
+                            This is the text for the third news item. I need extra characters to test out my theory about the border rule.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="footer"><!--footer needs working cant get hr to display-->
+            <div id=upper>
+                <a href="contact.html">Contact Us</a>
+            </div>
+           <div id="lower">
+            Innovative Global Concepts, Inc. All Rights Reserved
+           </div>
+        </div>
+    </body>
+</html>
+
